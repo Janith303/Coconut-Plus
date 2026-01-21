@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".SinupSucces">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="421dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/sin"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/topnav2" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2sp"
+            app:srcCompat="@drawable/topnav" /> <!-- ✅ Fixed the incorrect line here -->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <!-- Background Image -->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="376dp"
+            android:layout_height="676dp"
+            android:layout_marginLeft="17dp"
+            app:srcCompat="@drawable/success_box" />
+
+        <!-- Overlay Text Layout -->
+        <LinearLayout
+            android:layout_width="392dp"
+            android:layout_height="519dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="377dp"
+                android:layout_height="89dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="148dp"
+                app:srcCompat="@drawable/success" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/successfully"
+                android:textColor="@android:color/black"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:textColor="@android:color/black"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_regok"
+                android:layout_width="121dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/mygreen"
+                android:text="@string/ok"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/under" />
+
+
+</LinearLayout>
