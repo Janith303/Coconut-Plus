@@ -8,7 +8,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
-    tools:context=".Singup">
+    tools:context=".Singup"
+    tools:ignore="MissingClass">
 
     <TextView
         android:id="@+id/textView2"
